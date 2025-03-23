@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     
-                    echo "Branch Name: $BRANCH_NAME
+                    echo "Branch Name: $BRANCH_NAME"
                 }
             }
         }
