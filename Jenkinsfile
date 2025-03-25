@@ -18,11 +18,11 @@ pipeline {
                 }
             }
         }
-       stage('Echo Job Name') {
+       stage('Echo workspace') {
             steps {
                 script {
 
-                    echo "Job Name: $JOB_NAME AND Build number: $BUILD_NUMBER"
+                    echo "Job workspace: $WORKSPACE"
                 }
             }
         }
