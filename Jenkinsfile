@@ -18,6 +18,14 @@ pipeline {
                 }
             }
         }
+        stage('Echo Job Name') {
+            steps {
+                script {
+
+                    echo "Job Name: $JOB_NAME AND Build number: $BUILD_NUMBER"
+                }
+            }
+        }
 
 
     }
