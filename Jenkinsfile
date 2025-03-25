@@ -18,6 +18,15 @@ pipeline {
                 }
             }
         }
+        stage('Echo Job Workspace') {
+            steps {
+                script {
+
+                    echo "Job workspace: $workspace"
+                }
+            }
+        }
+
 
 
     }
