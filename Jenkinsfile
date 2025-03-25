@@ -5,10 +5,21 @@ pipeline {
         stage('Echo Branch Name') {
             steps {
                 script {
-                    
+
                     echo "Branch Name: $BRANCH_NAME"
                 }
             }
         }
+        stage('Echo Job Name') {
+            steps {
+                script {
+
+                    echo "Job Name: $JOB_NAME AND Build number: $BUILD_NUMBER"
+                }
+            }
+        }
+
+
     }
 }
+
